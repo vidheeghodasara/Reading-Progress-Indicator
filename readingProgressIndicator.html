@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="jquery-3.6.0.min.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<style>
+		 #container{
+		 	position: fixed;
+		 	top: 5px;
+		 }
+		 #indicator{
+		 	position: fixed;
+		 	top: 0px;
+		 	height: 5px;
+		 	width: 100%;
+		 	-webkit-appearance:none;
+		 }
+		 progress::-webkit-progress-bar{
+		 	background: none;
+		 }
+		 progress::-webkit-progress-value{
+		 	background: red;
+		 }
+
+		
+	</style>
+
+	<link rel="stylesheet" href="jquery1.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+	<script>
+
+		$(document).ready(function(){
+			$("body").prepend("<div id = 'container'><progress id = 'indicator' value='0' max='100'></progress></div>")
+			$(window).scroll(function(){
+			var documentHeight = $(document).height();
+			console.log("documentHeight" + ":" + documentHeight);
+			var windowHeight = $(window).height();
+			console.log("windowHeight" + ":" + windowHeight);
+			var position = $(window).scrollTop();
+			console.log(position);
+			var progress = (position/(documentHeight-windowHeight))*100;
+			console.log(progress);
+			$("#indicator").attr("value", progress);
+            });
+		});
+		
+	</script>
+</head>
+<body>
+<p>
+	Lorem ipsum dolor sit amet consectetur adipisicing, elit. Reprehenderit molestiae magnam ipsa nulla, vero reiciendis cum, voluptatum maxime ex unde excepturi iure tempora ipsam eveniet provident ratione porro saepe et amet beatae corporis. Omnis sed perspiciatis architecto ipsam obcaecati expedita veniam rem voluptas, ab deserunt, eos, a incidunt. Sequi natus veritatis non nostrum culpa assumenda, temporibus quisquam hic quod dicta, fuga odio dolor molestiae earum. Rem quae quasi voluptatibus! Laboriosam corrupti ab necessitatibus cum, dolores illum, distinctio, delectus sit consequatur, laborum dicta. Neque ipsum, vitae suscipit quidem eos perspiciatis labore magnam voluptatem eveniet quisquam. Blanditiis ullam quam dolore, perspiciatis amet reiciendis, cum tempora consequatur itaque saepe in quae deserunt et voluptatibus repellendus quos praesentium ea dolor. Esse sunt corrupti possimus odit laborum hic, cumque eligendi excepturi ullam quisquam autem, animi totam numquam, quaerat quod quidem doloremque iste repellendus tenetur exercitationem! Error, eius corporis dolore rem quod quo. Aspernatur voluptatibus cum distinctio, praesentium laudantium quis error deserunt veritatis asperiores laboriosam possimus in? Officiis quas odit quaerat unde saepe exercitationem labore accusantium placeat, soluta voluptatem at ipsum culpa odio temporibus voluptates sit esse! Doloribus, similique eaque ut cumque minus, facilis sint molestias facere perferendis cupiditate hic, recusandae nobis expedita possi
+</p>
+	<img src = "images/img1.jpeg" />
+<p>
+	Lorem ipsum dolor sit amet consectetur adipisicing, elit. Reprehenderit molestiae magnam ipsa nulla, vero reiciendis cum, voluptatum maxime ex unde excepturi iure tempora ipsam eveniet provident ratione porro saepe et amet beatae corporis. Omnis sed perspiciatis architecto ipsam obcaecati expedita veniam rem voluptas, ab deserunt, eos, a incidunt. Sequi natus veritatis non nostrum culpa assumenda, temporibus quisquam hic quod dicta, fuga odio dolor molestiae earum. Rem quae quasi voluptatibus! Laboriosam corrupti ab necessitatibus cum, dolores illum, distinctio, delectus sit consequatur, laborum dicta. Neque ipsum, vitae suscipit quidem eos perspiciatis labore magnam voluptatem eveniet quisquam. Blanditiis ullam quam dolore, perspiciatis amet reiciendis, cum tempora consequatur itaque saepe in quae deserunt et voluptatibus repellendus quos praesentium ea dolor. Esse sunt corrupti possimus odit laborum hic, cumque eligendi excepturi ullam quisquam autem, animi totam numquam, quaerat quod quidem doloremque iste repellendus tenetur exercitationem! Error, eius corporis dolore rem quod quo. Aspernatur voluptatibus cum distinctio, praesentium laudantium quis error deserunt veritatis asperiores laboriosam possimus in? Officiis quas odit quaerat unde saepe exercitationem labore accusantium placeat, soluta voluptatem at ipsum culpa odio temporibus voluptates sit esse! Doloribus, similique eaque ut cumque minus, facilis sint molestias facere perferendis cupiditate hic, recusandae nobis expedita possi
+</p>
+	<img src = "images/img2.jpeg" />
+<p>
+	Lorem ipsum dolor sit amet consectetur adipisicing, elit. Reprehenderit molestiae magnam ipsa nulla, vero reiciendis cum, voluptatum maxime ex unde excepturi iure tempora ipsam eveniet provident ratione porro saepe et amet beatae corporis. Omnis sed perspiciatis architecto ipsam obcaecati expedita veniam rem voluptas, ab deserunt, eos, a incidunt. Sequi natus veritatis non nostrum culpa assumenda, temporibus quisquam hic quod dicta, fuga odio dolor molestiae earum. Rem quae quasi voluptatibus! Laboriosam corrupti ab necessitatibus cum, dolores illum, distinctio, delectus sit consequatur, laborum dicta. Neque ipsum, vitae suscipit quidem eos perspiciatis labore magnam voluptatem eveniet quisquam. Blanditiis ullam quam dolore, perspiciatis amet reiciendis, cum tempora consequatur itaque saepe in quae deserunt et voluptatibus repellendus quos praesentium ea dolor. Esse sunt corrupti possimus odit laborum hic, cumque eligendi excepturi ullam quisquam autem, animi totam numquam, quaerat quod quidem doloremque iste repellendus tenetur exercitationem! Error, eius corporis dolore rem quod quo. Aspernatur voluptatibus cum distinctio, praesentium laudantium quis error deserunt veritatis asperiores laboriosam possimus in? Officiis quas odit quaerat unde saepe exercitationem labore accusantium placeat, soluta voluptatem at ipsum culpa odio temporibus voluptates sit esse! Doloribus, similique eaque ut cumque minus, facilis sint molestias facere perferendis cupiditate hic, recusandae nobis expedita possi
+</p>
+	<img src = "images/img3.jpeg" />
+<p>
+	Lorem ipsum dolor sit amet consectetur adipisicing, elit. Reprehenderit molestiae magnam ipsa nulla, vero reiciendis cum, voluptatum maxime ex unde excepturi iure tempora ipsam eveniet provident ratione porro saepe et amet beatae corporis. Omnis sed perspiciatis architecto ipsam obcaecati expedita veniam rem voluptas, ab deserunt, eos, a incidunt. Sequi natus veritatis non nostrum culpa assumenda, temporibus quisquam hic quod dicta, fuga odio dolor molestiae earum. Rem quae quasi voluptatibus! Laboriosam corrupti ab necessitatibus cum, dolores illum, distinctio, delectus sit consequatur, laborum dicta. Neque ipsum, vitae suscipit quidem eos perspiciatis labore magnam voluptatem eveniet quisquam. Blanditiis ullam quam dolore, perspiciatis amet reiciendis, cum tempora consequatur itaque saepe in quae deserunt et voluptatibus repellendus quos praesentium ea dolor. Esse sunt corrupti possimus odit laborum hic, cumque eligendi excepturi ullam quisquam autem, animi totam numquam, quaerat quod quidem doloremque iste repellendus tenetur exercitationem! Error, eius corporis dolore rem quod quo. Aspernatur voluptatibus cum distinctio, praesentium laudantium quis error deserunt veritatis asperiores laboriosam possimus in? Officiis quas odit quaerat unde saepe exercitationem labore accusantium placeat, soluta voluptatem at ipsum culpa odio temporibus voluptates sit esse! Doloribus, similique eaque ut cumque minus, facilis sint molestias facere perferendis cupiditate hic, recusandae nobis expedita possi
+</p>
+	<img src = "images/img4.jpeg" />
+<p>
+	Lorem ipsum dolor sit amet consectetur adipisicing, elit. Reprehenderit molestiae magnam ipsa nulla, vero reiciendis cum, voluptatum maxime ex unde excepturi iure tempora ipsam eveniet provident ratione porro saepe et amet beatae corporis. Omnis sed perspiciatis architecto ipsam obcaecati expedita veniam rem voluptas, ab deserunt, eos, a incidunt. Sequi natus veritatis non nostrum culpa assumenda, temporibus quisquam hic quod dicta, fuga odio dolor molestiae earum. Rem quae quasi voluptatibus! Laboriosam corrupti ab necessitatibus cum, dolores illum, distinctio, delectus sit consequatur, laborum dicta. Neque ipsum, vitae suscipit quidem eos perspiciatis labore magnam voluptatem eveniet quisquam. Blanditiis ullam quam dolore, perspiciatis amet reiciendis, cum tempora consequatur itaque saepe in quae deserunt et voluptatibus repellendus quos praesentium ea dolor. Esse sunt corrupti possimus odit laborum hic, cumque eligendi excepturi ullam quisquam autem, animi totam numquam, quaerat quod quidem doloremque iste repellendus tenetur exercitationem! Error, eius corporis dolore rem quod quo. Aspernatur voluptatibus cum distinctio, praesentium laudantium quis error deserunt veritatis asperiores laboriosam possimus in? Officiis quas odit quaerat unde saepe exercitationem labore accusantium placeat, soluta voluptatem at ipsum culpa odio temporibus voluptates sit esse! Doloribus, similique eaque ut cumque minus, facilis sint molestias facere perferendis cupiditate hic, recusandae nobis expedita possi
+</p>
+	<img src = "images/img5.jpeg" />
+<p>
+	Lorem ipsum dolor sit amet consectetur adipisicing, elit. Reprehenderit molestiae magnam ipsa nulla, vero reiciendis cum, voluptatum maxime ex unde excepturi iure tempora ipsam eveniet provident ratione porro saepe et amet beatae corporis. Omnis sed perspiciatis architecto ipsam obcaecati expedita veniam rem voluptas, ab deserunt, eos, a incidunt. Sequi natus veritatis non nostrum culpa assumenda, temporibus quisquam hic quod dicta, fuga odio dolor molestiae earum. Rem quae quasi voluptatibus! Laboriosam corrupti ab necessitatibus cum, dolores illum, distinctio, delectus sit consequatur, laborum dicta. Neque ipsum, vitae suscipit quidem eos perspiciatis labore magnam voluptatem eveniet quisquam. Blanditiis ullam quam dolore, perspiciatis amet reiciendis, cum tempora consequatur itaque saepe in quae deserunt et voluptatibus repellendus quos praesentium ea dolor. Esse sunt corrupti possimus odit laborum hic, cumque eligendi excepturi ullam quisquam autem, animi totam numquam, quaerat quod quidem doloremque iste repellendus tenetur exercitationem! Error, eius corporis dolore rem quod quo. Aspernatur voluptatibus cum distinctio, praesentium laudantium quis error deserunt veritatis asperiores laboriosam possimus in? Officiis quas odit quaerat unde saepe exercitationem labore accusantium placeat, soluta voluptatem at ipsum culpa odio temporibus voluptates sit esse! Doloribus, similique eaque ut cumque minus, facilis sint molestias facere perferendis cupiditate hic, recusandae nobis expedita possi
+</p>
+	<img src = "images/img6.jpeg" />
+<p>
+	Lorem ipsum dolor sit amet consectetur adipisicing, elit. Reprehenderit molestiae magnam ipsa nulla, vero reiciendis cum, voluptatum maxime ex unde excepturi iure tempora ipsam eveniet provident ratione porro saepe et amet beatae corporis. Omnis sed perspiciatis architecto ipsam obcaecati expedita veniam rem voluptas, ab deserunt, eos, a incidunt. Sequi natus veritatis non nostrum culpa assumenda, temporibus quisquam hic quod dicta, fuga odio dolor molestiae earum. Rem quae quasi voluptatibus! Laboriosam corrupti ab necessitatibus cum, dolores illum, distinctio, delectus sit consequatur, laborum dicta. Neque ipsum, vitae suscipit quidem eos perspiciatis labore magnam voluptatem eveniet quisquam. Blanditiis ullam quam dolore, perspiciatis amet reiciendis, cum tempora consequatur itaque saepe in quae deserunt et voluptatibus repellendus quos praesentium ea dolor. Esse sunt corrupti possimus odit laborum hic, cumque eligendi excepturi ullam quisquam autem, animi totam numquam, quaerat quod quidem doloremque iste repellendus tenetur exercitationem! Error, eius corporis dolore rem quod quo. Aspernatur voluptatibus cum distinctio, praesentium laudantium quis error deserunt veritatis asperiores laboriosam possimus in? Officiis quas odit quaerat unde saepe exercitationem labore accusantium placeat, soluta voluptatem at ipsum culpa odio temporibus voluptates sit esse! Doloribus, similique eaque ut cumque minus, facilis sint molestias facere perferendis cupiditate hic, recusandae nobis expedita possi
+</p>
+	<img src = "images/img7.jpeg" />
+<p>
+	Lorem ipsum dolor sit amet consectetur adipisicing, elit. Reprehenderit molestiae magnam ipsa nulla, vero reiciendis cum, voluptatum maxime ex unde excepturi iure tempora ipsam eveniet provident ratione porro saepe et amet beatae corporis. Omnis sed perspiciatis architecto ipsam obcaecati expedita veniam rem voluptas, ab deserunt, eos, a incidunt. Sequi natus veritatis non nostrum culpa assumenda, temporibus quisquam hic quod dicta, fuga odio dolor molestiae earum. Rem quae quasi voluptatibus! Laboriosam corrupti ab necessitatibus cum, dolores illum, distinctio, delectus sit consequatur, laborum dicta. Neque ipsum, vitae suscipit quidem eos perspiciatis labore magnam voluptatem eveniet quisquam. Blanditiis ullam quam dolore, perspiciatis amet reiciendis, cum tempora consequatur itaque saepe in quae deserunt et voluptatibus repellendus quos praesentium ea dolor. Esse sunt corrupti possimus odit laborum hic, cumque eligendi excepturi ullam quisquam autem, animi totam numquam, quaerat quod quidem doloremque iste repellendus tenetur exercitationem! Error, eius corporis dolore rem quod quo. Aspernatur voluptatibus cum distinctio, praesentium laudantium quis error deserunt veritatis asperiores laboriosam possimus in? Officiis quas odit quaerat unde saepe exercitationem labore accusantium placeat, soluta voluptatem at ipsum culpa odio temporibus voluptates sit esse! Doloribus, similique eaque ut cumque minus, facilis sint molestias facere perferendis cupiditate hic, recusandae nobis expedita possi
+</p>
+	<img src = "images/img8.jpeg" />
+<p>
+	Lorem ipsum dolor sit amet consectetur adipisicing, elit. Reprehenderit molestiae magnam ipsa nulla, vero reiciendis cum, voluptatum maxime ex unde excepturi iure tempora ipsam eveniet provident ratione porro saepe et amet beatae corporis. Omnis sed perspiciatis architecto ipsam obcaecati expedita veniam rem voluptas, ab deserunt, eos, a incidunt. Sequi natus veritatis non nostrum culpa assumenda, temporibus quisquam hic quod dicta, fuga odio dolor molestiae earum. Rem quae quasi voluptatibus! Laboriosam corrupti ab necessitatibus cum, dolores illum, distinctio, delectus sit consequatur, laborum dicta. Neque ipsum, vitae suscipit quidem eos perspiciatis labore magnam voluptatem eveniet quisquam. Blanditiis ullam quam dolore, perspiciatis amet reiciendis, cum tempora consequatur itaque saepe in quae deserunt et voluptatibus repellendus quos praesentium ea dolor. Esse sunt corrupti possimus odit laborum hic, cumque eligendi excepturi ullam quisquam autem, animi totam numquam, quaerat quod quidem doloremque iste repellendus tenetur exercitationem! Error, eius corporis dolore rem quod quo. Aspernatur voluptatibus cum distinctio, praesentium laudantium quis error deserunt veritatis asperiores laboriosam possimus in? Officiis quas odit quaerat unde saepe exercitationem labore accusantium placeat, soluta voluptatem at ipsum culpa odio temporibus voluptates sit esse! Doloribus, similique eaque ut cumque minus, facilis sint molestias facere perferendis cupiditate hic, recusandae nobis expedita possi
+</p>
+	<img src = "images/img9.jpeg" />
+<p>
+	Lorem ipsum dolor sit amet consectetur adipisicing, elit. Reprehenderit molestiae magnam ipsa nulla, vero reiciendis cum, voluptatum maxime ex unde excepturi iure tempora ipsam eveniet provident ratione porro saepe et amet beatae corporis. Omnis sed perspiciatis architecto ipsam obcaecati expedita veniam rem voluptas, ab deserunt, eos, a incidunt. Sequi natus veritatis non nostrum culpa assumenda, temporibus quisquam hic quod dicta, fuga odio dolor molestiae earum. Rem quae quasi voluptatibus! Laboriosam corrupti ab necessitatibus cum, dolores illum, distinctio, delectus sit consequatur, laborum dicta. Neque ipsum, vitae suscipit quidem eos perspiciatis labore magnam voluptatem eveniet quisquam. Blanditiis ullam quam dolore, perspiciatis amet reiciendis, cum tempora consequatur itaque saepe in quae deserunt et voluptatibus repellendus quos praesentium ea dolor. Esse sunt corrupti possimus odit laborum hic, cumque eligendi excepturi ullam quisquam autem, animi totam numquam, quaerat quod quidem doloremque iste repellendus tenetur exercitationem! Error, eius corporis dolore rem quod quo. Aspernatur voluptatibus cum distinctio, praesentium laudantium quis error deserunt veritatis asperiores laboriosam possimus in? Officiis quas odit quaerat unde saepe exercitationem labore accusantium placeat, soluta voluptatem at ipsum culpa odio temporibus voluptates sit esse! Doloribus, similique eaque ut cumque minus, facilis sint molestias facere perferendis cupiditate hic, recusandae nobis expedita possi
+</p>
+	<img src = "images/img10.jpeg" />
+
+
+
+ 
+</body>
+</html>
